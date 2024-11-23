@@ -29,6 +29,7 @@ const Register = () => {
   };
 
   const handleSubmit = (e) => {
+    console.log("submit");
     e.preventDefault()
     if (!data?.name || !data?.email || !data?.password||! data?.type ) return alert("Please fill all fields");
     else {
